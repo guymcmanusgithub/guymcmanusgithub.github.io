@@ -21,7 +21,9 @@
 header {
     grid-area: header;
     justify-self: center;
-    font-size: 34px;    
+    font-size: 34px; 
+    /* padding-left: 20px; */
+    /* padding-right: 20px;    */
 }
 nav {
     grid-area: nav;
@@ -135,22 +137,34 @@ a svg:hover .footer_icon_color {
 .about-container {
     display: grid;
     grid-template-columns:100%;
-    grid-template-rows: 50px 50px 1fr auto;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
     grid-template-areas:
-    "header"
-    "nav"
-    "main"
-    "footer"; 
+    "profile-pic"
+    "profile-words"; 
 }
+.about-container .profile-pic {
+    grid-area: profile-pic;
+    justify-self: center;
+    /* display: flex; */
+    padding-top: 20px;
+    /* justify-content: center; */
+}
+.about-container .profile-words {
+    grid-area: profile-words; 
+    /* display: flex; */
+    /* justify-content: center; */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 @media only screen and (min-width: 600px) {
     .about-container {
-        grid-template-columns: 
-        grid-template-rows:
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         grid-template areas:
-        ""
-        ""
-        ""
-        ""
+        "profile-pic, profile-words"
+        "profile-words profile-words"
     }
 }
 @media only screen and (min-width: 600px) {/* to 992 */
