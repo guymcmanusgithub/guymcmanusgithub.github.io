@@ -100,7 +100,7 @@ a svg:hover .footer_icon_color {
     "footer"; 
 
 }
-@media only screen and (min-width: 600px) {
+@media screen and (min-width: 600px) {
     .home-container {
         grid-template-columns: 
         grid-template-rows:
@@ -158,17 +158,17 @@ a svg:hover .footer_icon_color {
     padding-right: 20px;
 }
 
-@media only screen and (min-width: 600px) {
+@media screen and (min-width: 600px) {
     .about-container {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template areas:
-        "profile-pic, profile-words"
+        grid-template-areas:
+        "profile-pic profile-words"
         "profile-words profile-words"
     }
 }
-@media only screen and (min-width: 600px) {/* to 992 */
-    .about-container {
+/* @media only screen and (min-width: 600px) {/* to 992 */
+    /* .about-container {
         grid-template-columns: 
         grid-template-rows:
         grid-template areas:
@@ -176,28 +176,32 @@ a svg:hover .footer_icon_color {
         ""
         ""
         ""
-    }
-}
+    } */
+/* } */ 
 @media only screen and (min-width: 992px) {
     .about-container {
-        grid-template-columns: 
-        grid-template-rows:
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr;
         grid-template areas:
-        ""
-        ""
-        ""
-        ""
+        "profile-pic   empty         empty"
+        "profile-words profile-words profile-words"
     }
 }
 .coding-container {
     display: grid;
     grid-template-columns:100%;
-    grid-template-rows: 50px 50px 1fr auto;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
-    "header"
-    "nav"
-    "main"
-    "footer"; 
+    "typewriter-text"
+    "skillset-logos"; 
+}
+
+.typewriter-text {
+    grid-area: typewriter-text;
+    background: #41525a;
+}
+.skillset-logos {
+    grid-area: skillset-logos;
 }
 @media only screen and (min-width: 600px) {
     .coding-container {
