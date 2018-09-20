@@ -832,7 +832,7 @@ a svg:hover .skillset-icon-color {
     "main"
     "footer";  */
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
     width: 100%;
     height: 100vh;
 }
@@ -842,6 +842,7 @@ a svg:hover .skillset-icon-color {
     left: 0;
     width: 400%; /* If i add another book I have to increase this to 500% */
     height: 100%;
+    animation: animate 10s linear infinite;
     /* float: left; */
 }
 .books-container .slider .slide {
@@ -852,31 +853,89 @@ a svg:hover .skillset-icon-color {
 }
 .books-container .slider .slide .caption {
     position: absolute;
-    bottom: 60px;
+    bottom: 60px;  /*this was suggested to be commented out on youtube - it will move the captions to the top of the screen*/
     left: 60px;
     right: 60px;
     padding: 30px;
     background: rgba(0,0,0,.5);
     box-sizing: border-box;
+    transition: 0.5s;
 }
 .books-container .slider .slide h2 {
     margin: 0;
     padding: 0;
     color: #fff;
     font-size: 48px;
+    transition: 0.5s;
 }
 .books-container .slider .slide p {
     margin: 0;
     padding: 0;
     color: #fff;
     font-size: 16px;
+    transition: 0.5s;
 }
 .books-container .slider .slide.slide1 {
     background: url(/Assets/Cover_1_Entrepreneurial_Process.jpg);
     background-size: cover;
     background-position: center;
 }
-
+.books-container .slider .slide.slide2 {
+    background: url(/Assets/Cover_2_Creation_of-Sustainable.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.books-container .slider .slide.slide3 {
+    background: url(/Assets/Cover_3_Marketing_for_Growth.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.books-container .slider .slide.slide4 {
+    background: url(/Assets/Cover_4_The-Road_Map.jpg);
+    background-size: cover;
+    background-position: center;
+}
+@keyframes animate{
+    0% {
+        left: 0;
+    }
+    25% {
+        left: 0;
+    }
+    30% {
+        left: -100%;
+    }
+    55% {
+        left: -100%;
+    }
+    60% {
+        left: -200%;
+    }
+    85% {
+        left: -200%;
+    }
+    100% {
+        left: -300%;
+    }
+        
+    }
+}
+@media (max-width: 768px){
+    .books-container .slider slide .caption {
+        
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        padding: 20px
+    }
+    .books-container .slider slide .caption h2 {
+        margin: 0 0 20px;
+        font-size: 30px;
+    }
+    .books-container .slider slide .caption p {
+        font-size: 16px;
+    }
+}
 /* @media only screen and (min-width: 600px) {
     .books-container {
         grid-template-columns: 
