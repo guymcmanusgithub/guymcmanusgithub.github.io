@@ -301,16 +301,89 @@ a svg:hover .footer_icon_color {
     padding-left: 20px;
     padding-right: 20px;
 }
-
-@media screen and (min-width: 600px) {
-    .about-container {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas:
-        "profile-pic profile-words"
-        "profile-words profile-words"
-    }
+.contact-me {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    background: #fff;
+    padding: 40px;
+    border: 1px solid rgba(0,0,0,.1);
+    box-sizing: border-box;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
 }
+.contact-me h2 {
+    margin: 0 0 40px;
+    padding: 0;
+    color: #f7497d;
+    text-transform: uppercase;
+}
+.contact-me input {
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+.contact-me textarea {
+    height: 80px;
+    padding: 10px 0;
+    margin-bottom: 40px;
+}
+.contact-me input,
+.contact-me textarea {
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #999;
+}
+.contact-me textarea {
+    margin-bottom: 20px;
+}
+.contact-me input[type="submit"] {
+    border-bottom: none;
+    cursor: pointer;
+    background: #f7497d;
+    color: #fff;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.contact-me form div {
+    position: relative;
+}
+.contact-me form div label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: #999;
+    transition: .5s;
+    pointer-events: none;
+}
+.contact-me input:focus ~ label,
+.contact-me textarea:focus ~ label,
+.contact-me input:valid ~ label,
+.contact-me textarea:valid ~ label  {
+    top: -12px;
+    left:0;
+    color:#f7497d;
+    font-size: 12px;
+    font-weight: bold;
+}
+.contact-me input:focus, 
+.contact-me textarea:focus, 
+.contact-me input:valid, 
+.contact-me textarea:valid {
+    border-bottom: 2px solid #f7497d;
+}
+/* @media screen and (min-width: 600px) { */
+    /* .about-container { */
+        /* grid-template-columns: 1fr 1fr; */
+        /* grid-template-rows: 1fr 1fr; */
+        /* grid-template-areas: */
+        /* "profile-pic profile-words" */
+        /* "profile-words profile-words" */
+    /* } */
+/* }÷ */
 /* @media only screen and (min-width: 600px) {/* to 992 */
     /* .about-container {
         grid-template-columns: 
@@ -403,7 +476,11 @@ a svg:hover .footer_icon_color {
 .skillset-logos {
     grid-area: skillset-logos;
 }
-
+.skillset-logos p {
+    text-align: center;
+    font-weight: bold;
+    font-kerning: 1;
+}
 .skillset-logos ul {
     display: flex;
     justify-content: center;
