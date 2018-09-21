@@ -689,7 +689,7 @@ a svg:hover .skillset-icon-color {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-template-rows: auto 1fr auto;
-    grid-gap: 40px;
+    grid-gap: 30px;
     width: 95% ;
     margin: 100px auto 0;
     height: auto;
@@ -704,10 +704,10 @@ a svg:hover .skillset-icon-color {
     border-radius: 10px;
     transition: 0.5s;
 }
-.projects-container .card:hover {
-    /* transform: translateY(-20px); */
-    /* box-shadow: 0 20px 20px rgba(0,0,0,.2); */
-}
+/* .projects-container .card:hover { */
+    /* transform: translateY(-20px);  */
+    /* box-shadow: 0 20px 20px rgba(0,0,0,.2); */ */
+/* } */
 .projects-container .card .img-box {
     position: absolute;
     top: 0;
@@ -715,6 +715,9 @@ a svg:hover .skillset-icon-color {
     width: 100%;
     height: 100%;
     transition: 0.5s;
+}
+.projects-container .card .content ul a{
+    list-style-type: none;
 }
 .projects-container .card:hover .img-box {
     opacity: 1;
@@ -725,7 +728,7 @@ a svg:hover .skillset-icon-color {
 .projects-container .card .content {
     position: absolute;
     width: 100%;
-    height: 60%;
+    height: 80%;
     bottom: -100%;
     padding: 20px;
     padding-top: 60px;
