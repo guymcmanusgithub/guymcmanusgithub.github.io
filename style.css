@@ -224,16 +224,11 @@ a svg:hover .footer_icon_color {
 } */
 
 .about-container {
-    /* display: grid;
-    grid-template-columns:100%;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 20px;
-    grid-template-areas:
-    "profile-pic"
-    "profile-words";  */
     display: flex;
-    flex-flow: rows;
-    flex-wrap: wrap;
+    /* flex-flow: row;
+    flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: space-between;
     /* align-content: space-between; */
 }
 .about-container .profile-pic {
@@ -243,52 +238,48 @@ a svg:hover .footer_icon_color {
     /* display: flex; */
     /* height: 200px; */
     padding: 20px;
+    /* order:1; */
+    /* height: 100%; */
     /* justify-content: center; */
 }
-.about-container .profile-words {
+.profile-words {
     /* grid-area: profile-words;  */
     /* display: flex; */
     /* justify-content: center; */
     padding-left: 20px;
     padding-right: 20px;
+    /* order: 2; */
 }
 .resume {
     padding-left: 20px;
     padding-right: 20px;
+    /* order: 3; */
 }
-
 .contact-me {
-    /* position: absolute; */
-    position: relative;
-    /* display: flex; */
-    /* align-items: flex-end; */
-    /* top: 50%; */
-    left: 50%; /* centers the form */
-    transform: translate(-50%,-50%);
-    width: 400px;
+  
+    justify-self: flex-end;
     background: #fff;
     padding: 40px;
     border: 1px solid rgba(0,0,0,.1);
-    box-sizing: border-box;
+    box-sizing: border-box; /*this will make the box skinnier */  
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
 }
 .contact-me h2 {
     margin: 0 0 40px;
     /* padding: 0; */
     color: #8dc28d;
-    /* text-transform: uppercase; */
 }
-.contact-me input {
+.about-container .contact-me input {
     padding: 10px 0;
     margin-bottom: 20px;
 }
-.contact-me textarea {
+.about-container .contact-me textarea {
     height: 100px;
     padding: 10px 0;
     margin-bottom: 40px;
 }
-.contact-me input,
-.contact-me textarea {
+.about-container .contact-me input,
+.about-container .contact-me textarea {
     width: 100%;
     box-sizing: border-box;
     box-shadow: none;
@@ -296,21 +287,20 @@ a svg:hover .footer_icon_color {
     border: none;
     border-bottom: 2px solid #999;
 }
-.contact-me textarea {
+.about-container .contact-me textarea {
     margin-bottom: 20px;
 }
-.contact-me input[type="submit"] {
+.about-container .contact-me input[type="submit"] {
     border-bottom: none;
     cursor: pointer;
     background: #8dc263;
     color: #fff;
     margin-bottom: 0;
-    /* text-transform: uppercase; */
 }
-.contact-me form div {
+.about-container .contact-me form div {
     position: relative;
 }
-.contact-me form div label {
+.about-container .contact-me form div label {
     position: absolute;
     top: 10px;
     left: 0;
@@ -318,20 +308,20 @@ a svg:hover .footer_icon_color {
     transition: .5s;
     pointer-events: none;
 }
-.contact-me input:focus ~ label,
-.contact-me textarea:focus ~ label,
-.contact-me input:valid ~ label,
-.contact-me textarea:valid ~ label  {
+.about-container .contact-me input:focus ~ label,
+.about-container .contact-me textarea:focus ~ label,
+.about-container .contact-me input:valid ~ label,
+.about-container .contact-me textarea:valid ~ label  {
     top: -12px;
     left:0;
     color:#8dc263;
     font-size: 12px;
     font-weight: bold;
 }
-.contact-me input:focus, 
-.contact-me textarea:focus, 
-.contact-me input:valid, 
-.contact-me textarea:valid {
+.about-container .contact-me input:focus, 
+.about-container .contact-me textarea:focus, 
+.about-container .contact-me input:valid, 
+.about-container .contact-me textarea:valid {
     border-bottom: 2px solid #8dc263;
 }
 /* @media screen and (min-width: 600px) { */
@@ -371,11 +361,24 @@ a svg:hover .footer_icon_color {
     " typewriter-text"
     "skillset-logos"; 
     margin-top: -20px;
+    
     /* text-align: center; */
 }
-
+/* pre {
+    white-space: pre-wrap;       /* css-3 */
+    /* white-space: -moz-pre-wrap;  Mozilla, since 1999 */
+    /* white-space: -pre-wrap;      Opera 4-6 */
+    /* white-space: -o-pre-wrap;    Opera 7 */
+    /* word-wrap: break-word;       Internet Explorer 5.5+ */
+/* } */ 
+/* The above code does crazy shit to the code */
+.code {
+    /* margin-left: 3%; */
+    overflow-wrap: normal;
+}
 .typewriter-text {
-    grid-area: typewriter-text;
+    /* grid-area: typewriter-text; */
+    /* margin-left: 5%; This inserts a margin but background is main background color*/ 
     /* display: flex; */
     /* margin: 50px auto; */
     background: #41525a;
@@ -385,8 +388,8 @@ a svg:hover .footer_icon_color {
    /* text-align: center; */
    /* text-overflow: wrap; */
 }
- pre {
-    background: #41525a;
+.typewriter-text pre {
+    /* background: #41525a; */
     font-family: 'Inconsolata', monospace;
     font-size: 20px;
     /* letter-spacing: .15em; */
@@ -398,10 +401,10 @@ a svg:hover .footer_icon_color {
     animation: typing 2s steps(60, end);
     /* align-content: center; */
 }
- .typewriter-text pre:nth-child(2) {
+.typewriter-text pre:nth-child(2) {
     animation: typing-2 2.5s steps(60, end);
 } 
- .typewriter-text pre:nth-child(3) {
+.typewriter-text pre:nth-child(3) {
     animation: typing-2 4s steps(60, end);
 }
 .typewriter-text pre:nth-child(4) {
@@ -437,23 +440,32 @@ a svg:hover .footer_icon_color {
 .skillset-logos {
     display: flex;
     flex-direction: rows;
-    flex-wrap: wrap;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    
+    /* justify-content: space-between; */
 }
 .skillset-logos p {
     text-align: center;
     font-weight: bold;
-    font-kerning: 1;
+    /* font-kerning: 1; */
+    font-size: 18px;
+    flex-wrap: wrap;
 }
 .skillset-logos ul {
     display: flex;
     justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
 }
 .skillset-logos ul li {
     list-style: none;
 }
 .skillset-logos ul li a {
     display: inline-block;
-    padding: 0 30px;
+    padding: 20px 30px;
+    text-decoration: none;
+    color: #8dc263;
 }
 /* .skillset_icon1,
 .skillset_icon2,
@@ -510,23 +522,26 @@ a svg:hover .skillset-icon-color {
     /* "nav" */
     /* "main" */
     /* "footer"; */
+    display: flex;
+    flex-flow: row wrap;
     position: relative;
-    width: 1200px;
+    /* width: 1200px; */
     height: 300px;
-    margin: 240px auto;
-    background: #000;
+    /* margin: 240px auto; */
+    /* background: #000; */
 } 
 
 .business-container .box {
     position: relative;
     width: calc(400px - 30px);
     height: calc(300px - 30px);
-    background: #000;
+    /* background: #000; */
     float: left;
     margin: 15px;
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 10px;
+    border: solid 1px;
 }
 .business-container .box .icon {
     position: absolute;
@@ -534,7 +549,7 @@ a svg:hover .skillset-icon-color {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #f00;
+    /* background: #f00; */
     transition: 0.5s;
     z-index: 1;
 }
@@ -628,7 +643,7 @@ a svg:hover .skillset-icon-color {
     }
 }
 @media only screen and (min-width: 600px) {/* to 992 */
-    .business-container {
+    /* .business-container {
         grid-template-columns: 
         grid-template-rows:
         grid-template areas:
@@ -648,7 +663,7 @@ a svg:hover .skillset-icon-color {
         ""
         ""
     }
-} */
+} */ 
 
 .projects-container {
     position: relative;
