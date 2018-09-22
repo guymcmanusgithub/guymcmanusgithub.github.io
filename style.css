@@ -96,6 +96,13 @@ a svg:hover .footer_icon_color {
     /* margin-bottom: 50px; */
     /* margin-top: 50px; */
 }
+.home-text {
+    display: flex;
+    border: solid 1px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+}
 .home-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -655,40 +662,8 @@ svg .business-icon-size {
     width:80%;
     height: 80%;
 }
-/* }
-@media only screen and (min-width: 600px) {
-    .business-container {
-        grid-template-columns: 
-        grid-template-rows:
-        grid-template areas:
-        ""
-        ""
-        ""
-        ""
-    }
-}
-@media only screen and (min-width: 600px) {/* to 992 */
-    /* .business-container {
-        grid-template-columns: 
-        grid-template-rows:
-        grid-template areas:
-        ""
-        ""
-        ""
-        ""
-    }
-}
-@media only screen and (min-width: 992px) {
-    .business-container {
-        grid-template-columns: 
-        grid-template-rows:
-        grid-template areas:
-        ""
-        ""
-        ""
-        ""
-    }
-} */ 
+
+/* ########### PROJECTS PAGE ############## */
 
 .projects-container {
     position: relative;
@@ -705,15 +680,15 @@ svg .business-icon-size {
     width: 300px;
     height: 440px;
     margin: 0 auto;
-    background: #000;
+    background: #41525a;
     overflow: hidden;
     border-radius: 10px;
     transition: 0.5s;
 }
-/* .projects-container .card:hover { */
-    /* transform: translateY(-20px);  */
-    /* box-shadow: 0 20px 20px rgba(0,0,0,.2); */ */
-/* } */
+.projects-container .card:hover {
+    transform: translateY(-20px); 
+    box-shadow: 0 20px 20px rgba(0,0,0,.2); */
+ }  */
 .projects-container .card .img-box {
     position: absolute;
     top: 0;
@@ -721,9 +696,6 @@ svg .business-icon-size {
     width: 100%;
     height: 100%;
     transition: 0.5s;
-}
-.projects-container .card .content ul a{
-    list-style-type: none;
 }
 .projects-container .card:hover .img-box {
     opacity: 1;
@@ -739,33 +711,40 @@ svg .business-icon-size {
     padding: 20px;
     padding-top: 60px;
     box-sizing: border-box;
-    text-align: center;
+    text-align: left;
     transition: 0.5s;
+    color: #f4f5f2;
+}
+.projects-container .card .content ul {
+    list-style: none;
+}
+.projects-container .card .content ul li {
+    color: #f4f5f2;
+
+    display: inline-block;
+}
+.projects-container .card .content ul li a{
+    color: #f4f5f2;
 }
 .projects-container .card:hover .content {
     bottom: 0;
 }
 .projects-container .card:nth-child(1) .content {
-    background: linear-gradient(0deg, #c21833, transparent); 
+    background: linear-gradient(0deg, #8DC263, transparent); 
 }
 .projects-container .card:nth-child(2) .content {
-    background: linear-gradient(0deg, #8012a5, transparent); 
+    background: linear-gradient(0deg, #8DC263, transparent); 
 }
 .projects-container .card:nth-child(3) .content {
-    background: linear-gradient(0deg, #3a414c, transparent); 
+    background: linear-gradient(0deg, #8DC263, transparent); 
 }
 .projects-container .card:nth-child(4) .content {
-    background: linear-gradient(0deg, #2196f3, transparent); 
+    background: linear-gradient(0deg, #8DC263, transparent); 
 }
 .container .card .content h2 {
-    margin: 0 0 10px;
     padding: 0;
     color: #fff;
     font-size: 20px;
-}
-.container .card .content h2 span {
-    color: #ffeb3b;
-    font-size: 16px;
 }
 .container .card .content p {
     margin: 0;
@@ -773,62 +752,16 @@ svg .business-icon-size {
     color: #fff;
     font-size: 16px;
 }
-.container .card .content ul {
-    display: flex;
-    margin: 20px 0 0;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
-}
-.container .card .content ul li {
-    list-style: none;
-}
-.container .card .content ul li a {
-    color: #fff;
-    padding: 0 10px;
-    font-size: 18px;
-}
-
-
 
 .project-icon {
-    width: 30px;
+    position: relative;
+    top: 13px;
+    left: 5px;
+    width: 35px;
+    padding: 10px;
 }
-/* 
-@media only screen and (min-width: 600px) {
-    .projects-container {
-        grid-template-columns: 
-        grid-template-rows:
-        grid-template areas:
-        ""
-        ""
-        ""
-        ""
-    }
-}
-@media only screen and (min-width: 600px) {to 992 */
-    /* .projects-container {
-        grid-template-columns: 
-        grid-template-rows:
-        grid-template areas:
-        ""
-        "" */
-        /* ""
-        ""
-    }
-}
-@media only screen and (min-width: 992px) {
-    .projects-container {
-        grid-template-columns: 
-        grid-template-rows:
-        grid-template areas:
-        ""
-        ""
-        ""
-        ""
-    }
-} */
 
+/* ######### BOOKS PAGE ######## */
 .books-container {
     overflow: hidden;
 }
