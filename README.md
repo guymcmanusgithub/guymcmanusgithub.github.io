@@ -25,6 +25,7 @@ The following tech stack was used to complete this portfolio
 <li>CSS 3</li>
 <li>Github</li>
 <li>Github.io / pages</li>
+<li>Git</li>
 <li>Formspree</li>
 <li>Figma</li>
 <li>Trello</li>
@@ -36,6 +37,9 @@ The following tech stack was used to complete this portfolio
 <li>Devicon</li> - same as font awesome
 <li>Google Fonts</li>
 <li>Youtube - Online Tutorials</li> - should i list the tutorials that i utilised?
+<li>Pinterest<li> 
+<li>- google font pairer</li>
+<li>Adobe color circle - or whatever it was called </li>
 </ul>
 
 <h2>Design and Documentation</h2>
