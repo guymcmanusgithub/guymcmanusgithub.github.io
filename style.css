@@ -92,6 +92,14 @@ a svg:hover .footer_icon_color {
     color: #41525a;
     margin-left: 30px;
 }
+
+.home-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 .home-text {
     display: flex;
     border: solid 1px;
@@ -99,13 +107,7 @@ a svg:hover .footer_icon_color {
     align-items: center;
     padding: 20px;
     margin: 20px;
-}
-.home-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 1rem;
-    padding-left: 20px;
-    padding-right: 20px;
+    color: #41525a;
 }
 .home-container .box {
     display: flex;
@@ -212,6 +214,7 @@ a svg:hover .footer_icon_color {
 .profile-words {
     padding-left: 20px;
     padding-right: 20px;
+    color: #41525a;
 }
 .resume {
     border: 1px solid rgba(0,0,0,.1);
@@ -405,6 +408,7 @@ a svg:hover .skillset-icon-color {
     align-items: center;
     padding: 20px;
     margin: 20px;
+    color: #41525a;
 }
 .business-container .box {
     position: relative;
@@ -508,11 +512,18 @@ svg .business-icon-size {
     margin: 100px auto 0;
     height: auto;
 }
-.project-text {
+.projects-text {
     display: flex;
     border: solid 1px;
     justify-items: center;
     align-items: center;
+    color: #41525a;
+    padding: 20px;
+    margin: 20px;
+    text-decoration: none;
+}
+.projects-text a {
+    color: #41525a;
 }
 .projects-container .card {
     position: relative;
