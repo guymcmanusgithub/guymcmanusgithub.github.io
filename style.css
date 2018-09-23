@@ -105,9 +105,16 @@ a svg:hover .footer_icon_color {
     border: solid 1px;
     justify-items: center;
     align-items: center;
-    padding: 20px;
-    margin: 20px;
-    color: #41525a;
+    margin: 20px; 
+    border: 1px solid rgba(0,0,0,.1);
+    box-sizing: border-box; 
+    box-shadow: 0px 5px 10px rgba(0,0,0,.2);
+    background: #41525a;
+    opacity: .7;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;   
+    color: #f4f5f2;
 }
 .home-container .box {
     display: flex;
@@ -408,7 +415,12 @@ a svg:hover .skillset-icon-color {
     align-items: center;
     padding: 20px;
     margin: 20px;
-    color: #41525a;
+    border: 1px solid rgba(0,0,0,.1);
+    box-sizing: border-box; 
+    box-shadow: 0px 5px 10px rgba(0,0,0,.2);
+    background: #41525a;
+    opacity: .7;
+    color: #f4f5f2;
 }
 .business-container .box {
     position: relative;
@@ -517,13 +529,18 @@ svg .business-icon-size {
     border: solid 1px;
     justify-items: center;
     align-items: center;
-    color: #41525a;
     padding: 20px;
     margin: 20px;
     text-decoration: none;
+    border: 1px solid rgba(0,0,0,.1);
+    box-sizing: border-box; 
+    box-shadow: 0px 5px 10px rgba(0,0,0,.2);
+    background: #41525a;
+    opacity: .7;
+    color: #f4f5f2;
 }
 .projects-text a {
-    color: #41525a;
+    color: #f4f5f2;
 }
 .projects-container .card {
     position: relative;
