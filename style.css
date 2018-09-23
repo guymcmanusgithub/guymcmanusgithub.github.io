@@ -102,6 +102,7 @@ a svg:hover .footer_icon_color {
     justify-items: center;
     align-items: center;
     padding: 20px;
+    margin: 20px;
 }
 .home-container {
     display: grid;
@@ -473,12 +474,44 @@ a svg:hover .footer_icon_color {
     
     /* justify-content: space-between; */
 }
+.skillset-logos .sidebar {
+    /* display: table; */
+    position: relative;
+    border: 1px solid rgba(0,0,0,.1);
+    box-sizing: border-box; 
+    box-shadow: 0px 5px 10px rgba(0,0,0,.2);
+  
+    float: left;
+    background: #41525a;
+    opacity: .7;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top:20px;
+    /* margin-top: 20px; */
+    margin-top: 10%;
+    margin-bottom: 10%
+    /* height: 100%; */
+    
+}
 .skillset-logos p {
-    text-align: center;
-    font-weight: bold;
+    /* text-align: center; */
+    /* font-weight: bold; */
     /* font-kerning: 1; */
+   
     font-size: 18px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    /* text-align: center; */
+    /* line-height: auto; */
+    
+    /* left: 50%; */
+    /* line-height: 50%; */
+    /* vertical-align: middle; */
+    /* top:50%; */
+    /* transform: translate(-50%, -50%); */
+    /* text-align: center; */
+    color: #f4f5f2;
+    
+   
 }
 .skillset-logos ul {
     display: flex;
@@ -491,7 +524,7 @@ a svg:hover .footer_icon_color {
 }
 .skillset-logos ul li a {
     display: inline-block;
-    padding: 20px 30px;
+    padding: 35px 30px;
     text-decoration: none;
     color: #8dc263;
 }
@@ -551,6 +584,15 @@ a svg:hover .skillset-icon-color {
 
 
 } 
+.business-text {
+    display: flex;
+    border: solid 1px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+}
+
 
 .business-container .box {
     position: relative;
@@ -668,6 +710,14 @@ svg .business-icon-size {
     margin: 100px auto 0;
     height: auto;
 }
+.project-text {
+    display: flex;
+    border: solid 1px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+}
 .projects-container .card {
     position: relative;
     width: 300px;
@@ -754,18 +804,17 @@ svg .business-icon-size {
 }
 
 /* ######### BOOKS PAGE ######## */
-.books-container {
-    /* overflow: hidden; */
-}
-.books-container figure {
+
+.books-container section {
     display: flex;
     position: relative;
     width: 400%;
     margin: 0;
     left: 0;
-    text-align: left;
-    font-size: 0;
+    flex-wrap: wrap;
     animation: 20s slider infinite;
+
+    /* vertical-align: middle; */
 }
 @keyframes slider {
     0% {
@@ -796,72 +845,72 @@ svg .business-icon-size {
         left: -400%;
     }
 }
-.books-container figure .slide {
-    width: 25%;
+.books-container .slide {
+    width: calc(25% - 40px);
     float: left;
     padding: 20px;
 }
-.books-container figure .slide img {
-   
+.books-container .slide img {
     position: relative;
     width: 50%;
     max-width: 400px;
-
     flex-wrap: wrap;
+    vertical-align: middle;
+    /* align-items: flex-start; */
 }
-
-.books-container figure .slide .buy-button p {
-    color: red;
-}
-.books-container figure .slide .buy-button {
-    /* order: 2; */
-    /* width: 50%;
-    max-width: 400px;
-    float: left; */
-    /* z-index: 1; */
-    width: 50%;
+.books-container .slide .buy-button {
+    /* justify-content: flex-start; */
+    align-items: center;
+    width: calc(50% - 60px);
+    /* height: calc(auto - 50%); */
     max-width: 300px;
-    min-width: 200px;
-    /* margin: 20px 0px; */
+    min-width: 150px;
     flex-wrap: wrap;
-    background: #229;
-    padding: 40px;
-    border: 1px solid rgba(0,0,0,.1);
+    /* background: #229; */
+    /* border: 1px solid rgba(0,0,0,.1); 
     box-sizing: border-box;   
-    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2); */
     flex-wrap: wrap;
     display: inline-block;
-    margin: 20px;
-}
-.books-container figure .slide .blurb {
-   /* order: 3; */
-   /* border: border-box; */
-   /* justify-content: flex-end;
-   position: absolute;
-   margin: 0 auto;
-   width: 400px;
-   justify-self: center; */
-   /* justify-items: center;
-   align-items: center;
-   justify-self: center; */
+    color: #8DC263;
+    display: inline-block;
+    text-align: center;
+    margin-left: 10px;
+    /* margin: 0 auto; */
+    
 
+    
+}
+.books-container .slide .buy-button button {
+    color:#f4f5f2;
+    background: #8dc263;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 24px;
+    
+}
+.books-container .slide .buy-button p {
+    color: #41525a;
+}
+.books-container .slide .buy-button a {
+    color: #41525a;
+    font-display: center;
+}
+.books-container .slide .blurb {
    flex-wrap: wrap;
-   background: #767;
-   padding: 40px;
-   /* padding-top: 50px; */
-   margin: 20px 0px;
+   background: #41525a;
+   opacity: .7;
+   padding-left: 20px;
+   margin-top: 20px;
    border: 1px solid rgba(0,0,0,.1);
-   box-sizing: border-box; /*this will make the box skinnier */  
-   box-shadow: 0 5px 10px rgba(0,0,0,.2);
+   box-sizing: border-box; 
+   box-shadow: 0px 5px 10px rgba(0,0,0,.2);
    display: inline-block;
-   width: 100%;
-   /* word-wrap: break-word; */
+   width: calc(100% - 40px);
+   color: #f4f5f2;
 }
    
-    /* width: 50%;
-    max-width: 400px;
-    float: left; */
-}
 
 /* .books-container {
     position: relative;

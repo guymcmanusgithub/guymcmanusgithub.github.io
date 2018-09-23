@@ -44,7 +44,7 @@ To make the cards 'pop' off the screen I utilised the following code in CSS:
 
 #### About Page
 The About Page includes a contact me form that changes the color of the field name to green and the size of the name of the field to 12px, when the field is selected.
-![](Assets/Contact-me-form.png)
+![](Assets/Contact-me.png)
 The following code was used to achieve this result:
 
 ```
@@ -150,7 +150,7 @@ To give the card more emphasis it appears to pop out of the screen.  This was do
 #### Books Page
 The books page features a slider which presents the books I authored in order.
 
-GUY INSERT IT IN HERE
+![](Assets/Book-slider1.png)
 
 In order to create the slideshow the following code was used:
 
