@@ -1,62 +1,110 @@
-GUY YOU ARE CURRENTLY WRITING IN A STYLE THAT IS NOT MARK DOWN - FIX THAT SHIT UP
-
-<h1>Guy McManus Personal Portfolio</h1>
+# Portfolio Project
 This portfolio project can be viewed at http://guymcmanusgithub.github.io
 
-The github repository for this project can be viewed at: 
+The github repository for this project can be viewed at: https://github.com/guymcmanusgithub/guymcmanusgithub.github.io
 
-<h2>Description</h2>
+--- 
 
-<H3>Purpose</H3>
+## Description
+---
+### Purpose
+The purpose of this portfolio project is to create a personal website that reflects who I am and showcases my achievements, projects, products and personality.
 
 
-<H3>Functionality / Features</H3>
+### Functionality / Features
 
-<H3>Sitemp</H3>
+### Sitemap
+This website is comprised of 6 pages:
+* Home
+* About
+* Coding
+* Business
+* Projects
+* Books
 
-<H3>Screenshots</H3>
+### Target Audience
+The target audience for this site is potential employers or clients.
 
-<H3>Target Audience</H3>
+### Tech Stack
+The following tech stack was used to create this portfolio website:
 
-<h3>Tech Stack</h3>
-The following tech stack was used to complete this portfolio
-<ul>
-<li>HTML 5</li>
-<li>CSS 3</li>
-<li>Github</li>
-<li>Github.io / pages</li>
-<li>Git</li>
-<li>Formspree</li>
-<li>Figma</li>
-<li>Trello</li>
-</ul>
+* HTML 5
+* CSS 3
+* Github
+* Github pages
+* Git
+* Formspree
+* Photoshop CC
 
-<h4>Honorable mentions</h4>
-<p>These tools / sites / services were also used in the creation of the portfolio</p>
-<li>Font Awesome<li> - technically not stack, but did provide svg files for icons
-<li>Devicon</li> - same as font awesome
-<li>Google Fonts</li>
-<li>Youtube - Online Tutorials</li> - should i list the tutorials that i utilised?
-<li>Pinterest<li> 
-<li>- google font pairer</li>
-<li>Adobe color circle - or whatever it was called </li>
-</ul>
+#### Honorable mentions
+These tools / sites / services were also used in the creation of various attributes of the website: 
 
-<h2>Design and Documentation</h2>
-<h3>Design Process</h3>
-<h3>Wireframes</h3>
-<h3>Personal Logo</h3>
-<h3>Usability considerations</h3>
-<p>The inclusion of alt tags in images and svg's was utilised to aid in accessibility for the handicapped</p>
-<screenshot>include code snippet of alt-tags - or screenshot </screenshot>
+* Font Awesome.  For SVG files.
+* Devicon. For other SVG files.
+* Google Fonts. To include different fonts in this website (Montserrat and Inconsolata)
+* Youtube. Channels: Online Tutorials / DarkCode / Codegrid / Coding Tech 
+* Pinterest. To create a mood board.
+* Adobe color circle. To help draw out colors from selected images.
+* Figma. To create wireframes
+* Trello.  For project management
+--- 
+## Design and Documentation
+---
+### Design Process
 
-<h2>Details of Planning process</h2>
-<h3>Project Plan and timeline</h3>
-<h3>Screenshots of trello boards</h3>
+![](Assets/Mood-Board-Pinterest.png)
+![](Assets/Color-choices.png)
+![](Assets/Font-selections.png)
+### Wireframes
+![](Assets/MobileWireFrame1.png)
+![](Assets/MobileWireFrame2.png)
+![](Assets/TabletWireFrame1.png)
+![](Assets/TabletWireFrame2.png)
+![](Assets/DesktopWireFrame1.png)
+![](Assets/DesktopWireFrame2.png)
 
-<h2>Short Answer Q & A</h2>
-<h3>Describe key events in the development of hte internet from the 1980s to today</h3>
 
-<h3>Define and describe the relationship between fundamental aspects of the internet such as: domains, web servers, DNS, and web browsers.</h3>
+### Usability considerations
+Several techniques were utilised to aid in accessibility and usability, these included:<br>
+* Alt-tags for images and svg's
+* Re-styling my navigation bar to show where a user currently is, as well as highlighting where their mouse is currently hovering.
+* Avoiding the use of #000 and #fff to soften the experience of visiting my site on the eyes.  Bright colors were also not used for the same reason.
+* Pointer effects on the contact me form, to aid the user in knowing what field they are currently in.
+* The site has been designed to be fully responsive so that the user has a pleasant experience on the site regardless of the device they are using to view it.
 
-<h3>Reflect on one aspect of the development of internet technolgoies and how it has contributed to the world today.</h3>
+
+
+---
+## Details of Planning process
+---
+### Project Plan and timeline
+
+
+### Trello boards
+The trello boards can be viewed here: https://trello.com/b/LmbzWcnn/portfolio-project
+
+#### Screenshots of Trello Boards
+![](assets/Trello-Screen-Shot-1.png)
+![](assets/Trello-Screen-Shot-2.png)
+![](assets/Trello-Screen-Shot-3.png)
+![](assets/Trello-Screen-Shot-4.png)
+![](assets/Trello-Screen-Shot-5.png)
+---
+## Short Answer Q & A
+### Describe key events in the development of the Internet from the 1980s to today
+
+Tim Berners Lee did a bunch of stuff that culminated in the HTML syntax.
+
+
+
+### Define and describe the relationship between fundamental aspects of the internet such as: domains, web servers, DNS, and web browsers.
+
+domains: every website (or device with an independent connection to the internet) has an IP address.  This is a series of 4 numbers separated by dots - i.e. 111.12.4.213.  A domain name are the words that are connected to that number, i.e. 'www.google.com.  Domains are made up of two different different levels, top level and second level.  top level relates to the last part of the domain name - i.e. .com or .org.au and so on.  the second level appears before the .com and it is the name of your site, i.e. 'google'.  The domain is the address to your website, the website name is the name of that address.
+
+web servers: a web server is software that allows you to transfer files (like web pages) between two comptuers using a web browser.
+
+DNS: is an acronym for Domain Name Server. It uses the Domain Name System to connect a domain name (www.google.com) to an IP address (111.111.111.111) 
+
+Web browsers: a web browser is an application that allows users to view and access web sites.  it translates (or renders) HTML into a symantic structure and then styles that structure utilising CSS.  Additional functionality can be added through other programming languages like Ruby and Javascript and their libraries.
+
+### Reflect on one aspect of the development of internet technolgoies and how it has contributed to the world today.

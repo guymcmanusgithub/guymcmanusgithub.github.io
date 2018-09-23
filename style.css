@@ -340,7 +340,7 @@ a svg:hover .footer_icon_color {
 .about-container .contact-me input:focus ~ label,
 .about-container .contact-me textarea:focus ~ label,
 .about-container .contact-me input:valid ~ label,
-.about-container .contact-me textarea:valid ~ label  {
+.about-container .contact-me textarea:valid ~ label {
     top: -12px;
     left:0;
     color:#8dc263;
@@ -430,7 +430,6 @@ a svg:hover .footer_icon_color {
     width: 100%;
     margin: 10px 0;
     animation: typing 2s steps(60, end);
-    /* align-content: center; */
 }
 .typewriter-text pre:nth-child(2) {
     animation: typing-2 2.5s steps(60, end);
@@ -447,15 +446,11 @@ a svg:hover .footer_icon_color {
 .typewriter-text pre:nth-child(6) {
     animation: typing-2 13.5s steps(60, end);
 }
-/* .typewriter-text code:nth-child(7) {
-    animation: typing-2 30s steps(60, end);
-}   */
 @keyframes typing {
     from {width: 0;}
 }
 @keyframes typing-2 {
     0% {width: 0;}
-    /* 25% {width: 0;} */
     50% {width: 0;}
     100% {width: 100;}
 }
@@ -561,7 +556,6 @@ a svg:hover .skillset-icon-color {
     position: relative;
     width: calc(400px - 30px);
     height: calc(300px - 30px);
-    /* background: #000; */
     float: left;
     margin: 15px;
     box-sizing: border-box;
@@ -575,7 +569,6 @@ a svg:hover .skillset-icon-color {
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: #f00; */
     transition: 0.5s;
     z-index: 1;
 }
@@ -687,8 +680,8 @@ svg .business-icon-size {
 }
 .projects-container .card:hover {
     transform: translateY(-20px); 
-    box-shadow: 0 20px 20px rgba(0,0,0,.2); */
- }  */
+    box-shadow: 0 20px 20px rgba(0,0,0,.2); 
+ }  
 .projects-container .card .img-box {
     position: absolute;
     top: 0;
@@ -720,7 +713,6 @@ svg .business-icon-size {
 }
 .projects-container .card .content ul li {
     color: #f4f5f2;
-
     display: inline-block;
 }
 .projects-container .card .content ul li a{
@@ -763,13 +755,10 @@ svg .business-icon-size {
 
 /* ######### BOOKS PAGE ######## */
 .books-container {
-    overflow: hidden;
-}
-.books-container figure img {
-    width: 25%;
-    float: left;
+    /* overflow: hidden; */
 }
 .books-container figure {
+    display: flex;
     position: relative;
     width: 400%;
     margin: 0;
@@ -778,8 +767,6 @@ svg .business-icon-size {
     font-size: 0;
     animation: 20s slider infinite;
 }
-
-
 @keyframes slider {
     0% {
         left: 0;
@@ -809,6 +796,73 @@ svg .business-icon-size {
         left: -400%;
     }
 }
+.books-container figure .slide {
+    width: 25%;
+    float: left;
+    padding: 20px;
+}
+.books-container figure .slide img {
+   
+    position: relative;
+    width: 50%;
+    max-width: 400px;
+
+    flex-wrap: wrap;
+}
+
+.books-container figure .slide .buy-button p {
+    color: red;
+}
+.books-container figure .slide .buy-button {
+    /* order: 2; */
+    /* width: 50%;
+    max-width: 400px;
+    float: left; */
+    /* z-index: 1; */
+    width: 50%;
+    max-width: 300px;
+    min-width: 200px;
+    /* margin: 20px 0px; */
+    flex-wrap: wrap;
+    background: #229;
+    padding: 40px;
+    border: 1px solid rgba(0,0,0,.1);
+    box-sizing: border-box;   
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    flex-wrap: wrap;
+    display: inline-block;
+    margin: 20px;
+}
+.books-container figure .slide .blurb {
+   /* order: 3; */
+   /* border: border-box; */
+   /* justify-content: flex-end;
+   position: absolute;
+   margin: 0 auto;
+   width: 400px;
+   justify-self: center; */
+   /* justify-items: center;
+   align-items: center;
+   justify-self: center; */
+
+   flex-wrap: wrap;
+   background: #767;
+   padding: 40px;
+   /* padding-top: 50px; */
+   margin: 20px 0px;
+   border: 1px solid rgba(0,0,0,.1);
+   box-sizing: border-box; /*this will make the box skinnier */  
+   box-shadow: 0 5px 10px rgba(0,0,0,.2);
+   display: inline-block;
+   width: 100%;
+   /* word-wrap: break-word; */
+}
+   
+    /* width: 50%;
+    max-width: 400px;
+    float: left; */
+}
+
 /* .books-container {
     position: relative;
     overflow: hidden;
